@@ -100,7 +100,7 @@ namespace Pong
             }
 
             // Win state
-            if (playerScore >= 5)
+            if (playerScore >= 5 || cpuScore >= 5)
             {
                 pongTimer.Stop();
             }
