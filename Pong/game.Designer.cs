@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Pong));
             this.paddle_player = new System.Windows.Forms.PictureBox();
             this.paddle_cpu = new System.Windows.Forms.PictureBox();
             this.pong_ball = new System.Windows.Forms.PictureBox();
@@ -111,6 +112,7 @@
             this.Controls.Add(this.score_cpu);
             this.Controls.Add(this.pong_ball);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Pong";
             this.Text = "Pong";
             this.Load += new System.EventHandler(this.Pong_Load);
